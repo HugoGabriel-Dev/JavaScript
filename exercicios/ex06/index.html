@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventos DOM</title>
+    <style>
+        body{
+            display: flex;
+            height: 98vh;
+            justify-content: center;
+            align-items: center;
+        }
+        div#area{
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray; 
+            width: 200px;
+            height: 200px; 
+            text-align: center;
+            line-height: 200px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        interaja
+    </div>
+    <script>
+        var msg = document.getElementById('area')
+        msg.addEventListener('click', clic)
+        msg.addEventListener('mouseenter', entrar)
+        msg.addEventListener('mouseout', saiu)
+        
+        function clic(){
+            msg.innerHTML = 'clicou'
+            msg.style.backgroundColor = 'green'
+        }
+        function entrar(){
+            msg.innerHTML = 'entrou'
+        }
+        function saiu(){
+            msg.innerHTML = 'saiu'
+            msg.style.backgroundColor = 'gray'
+        }
+    </script>
+</body>
+</html>
