@@ -52,6 +52,11 @@ input::placeholder{
     font-size: 1.2em;
 }
 
+#botao:hover{
+    background-color: rgb(187, 48, 48);
+    color: rgba(241, 241, 241, 0.924);
+}
+
 button.addtarefa{
     margin-top: 10px;
     border-radius: 5px;
