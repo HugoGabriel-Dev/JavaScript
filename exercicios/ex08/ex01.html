@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de velocidade em js</title>
+</head>
+<body>
+    <h1>Sistema de velocidade</h1>
+    Velocidade do veiculo: <input type="number" name="vel" id="vel">
+    <input type="button" value="Conferir" onclick="calcula_vel()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcula_vel(){
+            let txvel = document.querySelector('input#vel')
+            let res = document.getElementById('res')
+            let vel = Number(txvel.value)
+                if (vel > 60){
+                    res.innerHTML += `<p>Você foi <strong>MULTADO!</strong> por estar a cima de 60km/h</p>`
+                }
+            res.innerHTML += `<p>Dirija com cuidado e use cinto se segurança!</p>`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de velocidade em js</title>
+</head>
+<body>
+    <h1>Sistema de internacionalização</h1>
+    Digite sua nacionalidade: <input type="text" name="nac" id="nac">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">
+        
+    </div>
+
+    <script>
+        function verificar(){
+            let nacionalidade = document.getElementById('nac').value
+            let res = document.getElementById("res")
+            if (nacionalidade.toLowerCase() == 'brasil'){
+                res.innerHTML += `<p>Sua nacionalidade é ${nacionalidade}, Você é Brasileiro</p>`
+            }else{
+                res.innerHTML += `<p>Sua nacionalidade é ${nacionalidade}, você é gringo</p>`
+            }
+        }
+    </script>
+</body>
+</html>
