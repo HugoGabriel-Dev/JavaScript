@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>teste function</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section class="conteiner">
+        <div id="dados">
+            <p class="ano_nasc">
+                <label for="nascimento">Ano de nascimento: </label> <input type="number" name="nascimento" id="nascimento" placeholder="Nascimento">
+            </p>
+
+            <p class="sexo">
+                Sexo:
+              <input type="radio" name="masc" id="masculino"><label for="masculino"> Masculino </label>
+
+              <input type="radio" name="masc" id="feminino"><label for="feminino"> Feminino</label>
+            </p>
+
+            <p class="botao">
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
+        </div>
+        <div id="foto">
+            <p id="res">Preencha os dados acima para ver o resultado!</p>
+
+            <img src="imagens/tarde3.jpg" alt="" id="img">
+        </div>
+    </section>
+    <footer>
+        &copy; <i>Hugo gabriel</i>
+    </footer>
+
+    <script src="comandos/script.js"></script>
+</body>
+</html>
