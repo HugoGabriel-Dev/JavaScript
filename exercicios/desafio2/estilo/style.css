@@ -1,2 +1,49 @@
 @charset "UTF-8";
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(198, 179, 154);
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+div.conteiner{
+    text-align: center;
+}
+
+div.conteiner h1{
+    padding: 30px;
+    color: white;
+}
+
+div.filho{
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    width: 65vw;
+}
+
+div.filho p{
+    margin-bottom: 10px;
+}
+
+div.filho img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+p.copy{
+    margin-top: 10px;
+    color: white;
+    font-size: 1.1em;
+    font-style: italic;
+}
