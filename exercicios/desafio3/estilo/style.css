@@ -40,7 +40,7 @@ p.ano_nasc input::placeholder{
     padding-left: 5px;
 }
 
-section.conteiner p.sexo{
+section.conteiner p#sexo{
    margin-left: 20px;
 }
 
