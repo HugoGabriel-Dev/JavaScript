@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>contagem js</title>
+</head>
+<body>
+    <header id="titulo">
+        <h1>Vamos contar!</h1>
+    </header>
+    <section id="principal">
+        <div id="dados">
+
+            <p id="inicio">
+                <label for="ini">Inicio:</label>
+                <input type="number" name="ini" id="ini">
+            </p>
+            <p id="fimm">
+                <label for="fim">fim:</label>
+                <input type="number" name="fim" id="fim">
+            </p>
+            <p id="pass">
+                <label for="passo">passo:</label>
+                <input type="number" name="passo" id="passo">
+            </p>
+            
+            <p><button onclick="enviar()">enviar</button></p>
+
+        </div>
+
+        <div id="resul">
+            <p id="res">Preparando contagem...</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Hugo gabriel</p>
+    </footer>
+
+    <script src="comandos/script.js"></script>
+</body>
+</html>
