@@ -9,8 +9,8 @@ function enviar(){
             tab.innerHTML = ""
                 while (c <= 10){
                     let item =document.createElement('option')
-                    item.text = `${n} x ${c} = ${n*c}`
-                    item.value = 'tabela'
+                    item.textContent = `${n} x ${c} = ${n*c}`
+                    item.value = `tabela${c}`
                     tab.appendChild(item)
                     c++
                 }
