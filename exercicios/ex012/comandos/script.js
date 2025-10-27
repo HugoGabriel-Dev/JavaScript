@@ -1,17 +1,16 @@
 function enviar(){
     let num = document.getElementById('num')
     let n = Number(num.value)
-    let tab = document.getElementById('tab')
-        if (n == 0 || n == ""){
-            alert("Digite um número válido")
+        if (n == "" || n == 0){
+            alert('[ERRO], DIGITE UM NÚMERO VÁLIDO')
         }else{
-            let c = 1
             tab.innerHTML = ""
-                while (c <= 10){
-                    let item =document.createElement('option')
-                    item.textContent = `${n} x ${c} = ${n*c}`
-                    item.value = `tabela${c}`
-                    tab.appendChild(item)
+            let c = 1
+                while(c <= 10){
+                    let tab = document.getElementById('tab')
+                    let op = document.createElement('option')
+                    op.text = `${n} x ${c} = ${n*c}`
+                    tab.appendChild(op)
                     c++
                 }
         num.value = ""
