@@ -1,40 +1,36 @@
-let listaNumeros = [];
-const num = document.querySelector("#num");
+const valor = document.querySelector('#num')
+let listaValores = []
 
-const buttonAdd = document.querySelector("#Adicionar");
-buttonAdd.addEventListener("click", () => {
-  const n = Number(num.value);
-  num.value = "";
-  if (n > 0 && n <= 100)
-    if (listaNumeros.includes(n)) {
-      alert(`o número ${n} já está na lista: ` + "[" + listaNumeros + "]");
-    } else {
-      listaNumeros.push(n);
-      num.innerHTML = "";
-      alert(`Número ${n} adicionado com sucesso!`);
-    }
-  else {
-    alert("o Número deve estar entre 1 e 100!");
+const buttonAdd = document.querySelector('#Adicionar')
+buttonAdd.addEventListener('click', () => {
+  
+  let valorNum = Number(valor.value)
+  valor.value = ""
+  if (valorNum < 1 || valorNum > 100 || valorNum === "" || listaValores.includes(valorNum)){
+    alert('Erro, porfavor digite um número entre 1 e 100! ou não digitado!')
+  }else{
+    listaValores.push(valorNum)
+    alert('Número adicionado com sucesso!')
   }
-});
-const buttonaFim = document.querySelector("#fim");
-buttonaFim.addEventListener("click", () => {
-  if (listaNumeros.length === 0) {
-    alert("ADICIONE PELO MENOS UM NÚMERO!");
-  } else {
-    const tabela = document.querySelector("#tabela");
-    let digitos = listaNumeros.length;
-    let maior = Math.max(...listaNumeros);
-    let menor = Math.min(...listaNumeros);
-    let soma = listaNumeros.reduce((a, b) => a + b, 0);
-    let media = soma / digitos;
+  
+})
 
-    tabela.innerHTML = `
-        <p>ao todo temos ${digitos} números</p>
-        <p>o maior digito foi ${maior}</p>
-        <p>o menor digito foi ${menor}</p>
-        <p>a soma de todos os números foi ${soma}</p>
-        <p>a média de todos esses números é igual a ${media}</p>
-        `;
-  }
-});
+const buttonFim = document.querySelector('#Finalizar')
+buttonFim.addEventListener('click', () => {
+
+  let total = listaValores.length
+  let maior = Math.max(...listaValores)
+  let menor = Math.min(...listaValores)
+  let soma = listaValores.reduce((a, b) => a + b, 0)
+  let media = soma / total
+
+  let res = document.querySelector('#tabela')
+  res.innerHTML = `
+  <p>Sua lista de números foi: [${listaValores}]</p>
+  <p>Foram digitados ao todo ${total} números</p>
+  <p>O maior número foi ${maior}</p>
+  <p>O menor número  foi ${menor}</p>
+  <p>A soma de todos os números foi: ${soma}</p>
+  <p>A média dos números foi: ${media}</p>
+  `
+})
