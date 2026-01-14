@@ -21,3 +21,71 @@ if (num >= 1) {
   console.log("zero");
 }
 
+const nota = 3;
+
+if (nota == 10) {
+  console.log("A");
+} else if (nota >= 8) {
+  console.log("B");
+} else if (nota >= 6) {
+  console.log("C");
+} else if (nota >= 4) {
+  console.log("D");
+} else if (nota >= 0) {
+  console.log("E");
+}
+
+const numm = 2;
+numm % 2 == 0 ? console.log("par") : console.log("impar");
+
+const opcao = 3;
+switch (opcao) {
+  case 1:
+    console.log("cadastrar");
+    break;
+  case 2:
+    console.log("listar");
+    break;
+  case 3:
+    console.log("sair");
+    break;
+}
+
+const email = "";
+if (email === "") {
+  console.log("Preencha o campo de e-mail");
+} else {
+  console.log("email preenchido");
+}
+
+let senha = 1234;
+let senhaValida = "";
+
+if (senha === 1234) {
+  senhaValida = true;
+} else {
+  senhaValida = false;
+}
+
+if (senhaValida) {
+  console.log("senha valida");
+} else {
+  console.log("senha invalida");
+}
+
+let emaill = "asads";
+let nome = "gcvhf";
+let idadee = "hji";
+let formularioValido = "";
+
+if (emaill != "" && nome != "" && idadee != "") {
+  formularioValido = true;
+} else {
+  formularioValido = false;
+}
+
+if (formularioValido) {
+  console.log("Formulário enviado com sucesso");
+} else {
+  console.log("Por favor, preencha todos os campos corretamente");
+}
