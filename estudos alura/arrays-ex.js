@@ -34,7 +34,7 @@ nomesDeUsuarios.forEach((valor, indice) => {
   console.log(`olá ${valor}`);
 });
 
-const precosProdutos = [23, 30, 10, 40.50, 19.90];
+const precosProdutos = [23, 30, 10, 40.5, 19.9];
 
 console.log("lista antes dos descontos", precosProdutos);
 
@@ -42,3 +42,12 @@ const produtosDesconto = precosProdutos.map((preco) => {
   return preco - (preco * 10) / 100;
 });
 console.log("lista depois dos descontos", produtosDesconto);
+
+const numeros = [23, 8, 18, 17, 19, 20, 13];
+
+const pessoasMaiores = numeros.filter((numeroMaior) => {
+  return numeroMaior >= 18;
+});
+
+console.log("todos as idades:", numeros);
+console.log("todos as idades acima de 18:", pessoasMaiores);
