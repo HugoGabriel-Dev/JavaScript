@@ -29,6 +29,9 @@ hugo.cidade = ["JB", "RE"];
 hugo.cidade.push("OL");
 // console.log(hugo);
 
+//apagando propriedade
+delete hugo.cidade
+
 //criando funções com objetos
 const funcao = (pessoa) => {
   return (
@@ -56,7 +59,7 @@ const pessoa2 = {
 };
 const pessoa3 = {
   nome: "marcos",
-  idade: 34,
+  idade: 15,
 };
 
 const listaPessoas = [];
@@ -64,7 +67,54 @@ listaPessoas.push(pessoa1);
 listaPessoas.push(pessoa2);
 listaPessoas.push(pessoa3);
 listaPessoas.forEach((valor, indice) => {
-  console.log(
-    `Pessoa${indice + 1} : Nome: ${valor.nome} | Idade: ${valor.idade}`,
-  );
+  // console.log(
+  //   `Pessoa${indice + 1} : Nome: ${valor.nome} | Idade: ${valor.idade}`,
+  // );
 });
+
+//filtrando pessoas maiores de idade
+for (person of listaPessoas) {
+  if (person.idade > 18) {
+    // console.log(person)
+  }
+}
+
+//criando um objeto com método
+const usuario = {
+  nome: "Hugo",
+  saudacao() {
+    console.log(`Olá, me chamo ${this.nome}`);
+  },
+};
+// usuario.saudacao()
+
+//listando propriedades e seus valores com o for in
+for (propriedade in hugo) {
+  // console.log(`Propriedade: ${propriedade}`);
+  // console.log(`Valor: ${hugo[propriedade]}`);
+}
+
+//cálculo de compra com objetos
+
+const produto = {
+  preco: 14.99,
+  quantidade: 30,
+};
+const valorTotal = produto.preco * produto.quantidade;
+produto.totalValor = valorTotal;
+// console.log(produto);
+
+//treinando a introducao de JSON em js
+
+let respostaDoServidor = '{"nome":"João","idade":30}';
+
+let transformeObjeto = JSON.parse(respostaDoServidor);
+// console.log(transformeObjeto);
+
+let voltandoJson = JSON.stringify(transformeObjeto);
+// console.log(voltandoJson);
+
+//acessando informacoes por atalhos
+console.log(Object.keys(hugo))
+console.log(Object.values(hugo))
+console.log(Object.entries(hugo))
