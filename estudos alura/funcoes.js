@@ -120,7 +120,7 @@ rl.question(
             } else {
               console.log("Resposta incorreta!");
             }
-            console.log(`Você acertou (${conta}/3)`)
+            console.log(`Você acertou (${conta}/3)`);
           },
         );
       },

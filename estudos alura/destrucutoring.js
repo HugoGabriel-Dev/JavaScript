@@ -3,10 +3,6 @@ const pessoa = {
   idade: 18,
 };
 
-// trocando as chaves de acesso em um objeto com rest e spread
-const { nome, idade } = pessoa;
-// console.log(newKey)
-
 //pega as propriedades do objeto original
 function saudacao({ nome, idade }) {
   console.log(`Olá,`, nome, `você tem`, idade, "anos");
