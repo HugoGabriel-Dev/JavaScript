@@ -55,7 +55,8 @@ let data = new Date();
 let dia = data.getDate();
 let mes = data.getMonth();
 let ano = data.getFullYear();
-console.log(dia, "/", mes + 1, "/", ano);
+let dataa = data.toLocaleDateString('pt-BR')
+console.log(dataa);
 
 //Desafio 8 - Crie uma função simples chamada somar(a, b) e exporte-a como módulo (modo CommonJS ou ES Modules, dependendo do ambiente).
 import { soma } from "../estudos alura/calculadora/operacoesMatematicas.js";
