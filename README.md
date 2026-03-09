@@ -1,177 +1,127 @@
-Olá! Eu sou Hugo Gabriel 👋
-Desenvolvedor Front-end em formação, focado no aprendizado e aplicação de JavaScript moderno para criação de aplicações web dinâmicas e interativas.
+⚡ JavaScript — Repertório de Estudos
 
-Este repositório funciona como um repertório de estudos, reunindo exercícios, experimentos e pequenos projetos feitos durante minha jornada de aprendizado.
+Olá! Eu sou Hugo Gabriel 👋
+Desenvolvedor Front-end em formação, focado no aprendizado e desenvolvimento de aplicações interativas utilizando JavaScript moderno.
+
+Este repositório reúne meus estudos, exercícios e práticas realizados durante minha jornada de aprendizado com a linguagem.
+
+--------------------------------------------------
 
 🎯 Objetivo do Repositório
 
-Este repositório foi criado para:
+Este projeto tem como finalidade:
 
-📚 Consolidar fundamentos de JavaScript
+- Consolidar fundamentos de JavaScript
+- Praticar lógica de programação
+- Aprender manipulação do DOM
+- Criar pequenas aplicações interativas
+- Demonstrar evolução técnica na linguagem
+- Servir como repertório de estudos e portfólio
 
-🧠 Desenvolver lógica de programação
-
-🌐 Aprender manipulação do DOM
-
-⚙️ Criar scripts e pequenas aplicações
-
-📈 Acompanhar minha evolução na linguagem
-
-💼 Servir como portfólio de estudos
+--------------------------------------------------
 
 🛠️ Tecnologias Utilizadas
-💻 Linguagens
 
-JavaScript (ES6+)
+Linguagens:
 
-HTML5
+- JavaScript (ES6+)
+- HTML5
+- CSS3
 
-CSS3
+Ferramentas:
 
-🧰 Ferramentas
+- VS Code
+- Git
+- GitHub
+- DevTools do navegador
 
-VS Code
+--------------------------------------------------
 
-Git
+📂 Estrutura do Projeto
 
-GitHub
+Conteúdo:
 
-DevTools do navegador
+- Exercícios de lógica de programação
+- Manipulação de variáveis e tipos de dados
+- Estruturas condicionais
+- Estruturas de repetição
+- Funções
+- Arrays e Objetos
+- Manipulação do DOM
+- Pequenos projetos em JavaScript
 
-📂 Estrutura do Repositório
-javascript-repertorio/
+--------------------------------------------------
 
-📁 fundamentos
-   variaveis.js
-   operadores.js
-   tipos-de-dados.js
-
-📁 condicoes
-   if-else.js
-   switch.js
-
-📁 loops
-   for.js
-   while.js
-
-📁 funcoes
-   funcoes.js
-   arrow-functions.js
-
-📁 arrays-objetos
-   arrays.js
-   objetos.js
-
-📁 dom
-   seletores.js
-   eventos.js
-   manipulacao-dom.js
-
-📁 projetos
-   tecboard
-   contador
-   calculadora
 📚 Conceitos Praticados
-⚡ Fundamentos de JavaScript
 
-Variáveis (let e const)
+JavaScript:
 
-Tipos de dados
+- Variáveis (let, const)
+- Tipos de dados
+- Operadores
+- Estruturas condicionais
+- Estruturas de repetição
+- Funções
+- Arrays
+- Objetos
 
-Operadores
+Manipulação do DOM:
 
-Conversão de tipos
+- Seleção de elementos
+- Eventos
+- Alteração de conteúdo
+- Interação com o usuário
+- Atualização dinâmica da interface
 
-Template strings
-
-🔁 Estruturas de Controle
-
-if / else
-
-switch
-
-for
-
-while
-
-forEach
-
-🧠 Programação com JavaScript
-
-Funções
-
-Arrow functions
-
-Arrays
-
-Objetos
-
-Métodos de array (map, filter, reduce)
-
-🌐 Manipulação do DOM
-
-Seleção de elementos
-
-Eventos
-
-Alteração de conteúdo
-
-Criação de interatividade na página
+--------------------------------------------------
 
 📌 Projetos em Destaque
-🎹 Tecboard (Alura)
 
-Projeto focado em interatividade com JavaScript, trabalhando com:
+Projeto Tecboard (Alura)
 
-Eventos de clique
+Projeto focado em:
 
-Manipulação do DOM
+- Eventos de clique
+- Manipulação do DOM
+- Interação do usuário
+- Organização do código JavaScript
 
-Reprodução de sons
+Exercícios de Lógica
 
-Interação do usuário
+Prática intensiva de:
 
-🧮 Mini Projetos
+- Resolução de problemas
+- Algoritmos básicos
+- Manipulação de dados
+- Estruturas de repetição
 
-Alguns exercícios práticos incluídos no repositório:
-
-🔢 Contador
-
-🧮 Calculadora simples
-
-🎲 Gerador de números aleatórios
-
-📝 Lista de tarefas
+--------------------------------------------------
 
 📈 Status de Aprendizado
 
-Atualmente estudando e evoluindo em:
+Atualmente evoluindo em:
 
-JavaScript avançado
+- JavaScript avançado
+- Manipulação avançada do DOM
+- Consumo de APIs
+- UI interativa
+- Frameworks Front-end
 
-Estruturas de dados
-
-Consumo de APIs
-
-UI interativa
-
-Frameworks Front-end
+--------------------------------------------------
 
 🎯 Próximos Passos
 
-Estudar JavaScript assíncrono
+- Aprender JavaScript assíncrono
+- Estudar Promises e Async/Await
+- Consumir APIs REST
+- Estudar React.js
+- Criar projetos completos com JavaScript
 
-Aprender Promises e Async/Await
-
-Consumir APIs REST
-
-Estudar React.js
-
-Desenvolver projetos completos
+--------------------------------------------------
 
 ⭐ Sobre mim
 
 Sou um desenvolvedor dedicado, autodidata e apaixonado por tecnologia.
-Estou em busca da minha primeira oportunidade como Desenvolvedor Front-end Júnior para aplicar meus conhecimentos e crescer profissionalmente.
+Busco minha primeira oportunidade como Desenvolvedor Front-end Júnior para aplicar meus conhecimentos e crescer profissionalmente.
 
-💡 "Transformando aprendizado em código todos os dias."
+"Transformando aprendizado em código todos os dias."
