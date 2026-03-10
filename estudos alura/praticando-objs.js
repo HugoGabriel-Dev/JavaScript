@@ -97,5 +97,5 @@ console.log("Detalhamento:");
 
 for (let [chave, valor] of Object.entries(relatorio)) {
   const status = valor > 50 ? '(Alerta)' : '(Ok)'
-  console.log(`${chave}: ${valor} ${status}`)
+  console.log(`${chave}: ${valor} ${status}.`)
 }
