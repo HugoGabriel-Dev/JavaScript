@@ -79,3 +79,23 @@ function montarObjeto(lista) {
 }
 
 console.log(montarObjeto(array));
+
+// Criando um sistema de inspeção
+const relatorio = {
+  temperatura: 75,
+  vibracao: 40,
+  pressao: 55,
+  nivelRuido: 30,
+};
+
+let arrayAvaliadas = Object.keys(relatorio);
+let arrayValores = Object.values(relatorio);
+
+console.log(arrayAvaliadas);
+console.log(arrayValores);
+console.log("Detalhamento:");
+
+for (let [chave, valor] of Object.entries(relatorio)) {
+  const status = valor > 50 ? '(Alerta)' : '(Ok)'
+  console.log(`${chave}: ${valor} ${status}`)
+}
